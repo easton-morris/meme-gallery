@@ -9,6 +9,7 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
 }
 
@@ -70,4 +71,19 @@ main {
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
+}
+
+
+.tip {
+  display: none;
+  background-color: lightskyblue;
+  border: 2px round black;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+button:hover + .tip {
+  display: inline-block;
 }
